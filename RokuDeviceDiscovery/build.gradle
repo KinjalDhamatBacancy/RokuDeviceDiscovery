@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+//        classpath 'com.android.tools.build:gradle:0.5.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "17.0.0"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 16
+    }
+}
+
+dependencies {
+
+	// You must install or update the Support Repository through the SDK manager to use this dependency.
+	// The Support Repository (separate from the corresponding library) can be found in the Extras category.
+	// compile 'com.android.support:appcompat-v7:18.0.0'
+}
